@@ -10,7 +10,7 @@ const Menu = () => {
       <h1 className="text-4xl font-medium mb-6">Menu Component</h1>
       <button
         onClick={() => setAppState("quiz")}
-        className=" bg-slate-300 rounded-md p-1 w-[300px] h-[50px] border-none cursor-pointer font-medium hover:bg-orange-400 hover:text-white"
+        className=" bg-orange-400 rounded-md p-1 w-[300px] h-[50px] border-none cursor-pointer font-medium hover:bg-gray-700 hover:text-white"
       >
         Start QUIZ
       </button>
