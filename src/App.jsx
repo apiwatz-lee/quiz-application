@@ -8,9 +8,10 @@ export const DataContext = createContext();
 
 function App() {
   const [appState, setAppState] = useState("menu");
+  const [score, setScore] = useState(0);
 
   return (
-    <DataContext.Provider value={{ appState, setAppState }}>
+    <DataContext.Provider value={{ appState, setAppState, score, setScore }}>
       <div className="flex flex-col justify-center items-center text-center">
         <h1 className="font-bold text-5xl mb-9 mt-5">Web Development Quiz</h1>
         {appState === "menu" && <Menu />}
