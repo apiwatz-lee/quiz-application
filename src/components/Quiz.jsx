@@ -8,7 +8,6 @@ const Quiz = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [answer, setAnswer] = useState("");
   const { score, setScore, setAppState } = useContext(DataContext);
-  console.log(useContext(DataContext));
 
   useEffect(() => {
     checkAnswer();
